@@ -45,7 +45,6 @@ pre-commit
 ## Review
 
 Should be fixed:
-- PR has conflicts
 - 2nd function `request_package()` is not used anywhere (might be useful if implementing async)
 - Function & variable naming could be improved: e.g. `get_package()` -> `get_package_dependency_tree()`; `range` -> `version_range`
 - Documentation: missing docstrings
