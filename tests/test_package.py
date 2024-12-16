@@ -1,6 +1,7 @@
 from django.test import Client
 
 
+# REVIEW: this test fails, dependency versions are wrong
 def test_get_package():
     client = Client()
     response = client.get("/package/minimatch/3.1.2")
@@ -19,3 +20,6 @@ def test_get_package():
         "name": "minimatch",
         "version": "3.1.2",
     }
+
+
+# REVIEW: add more tests for the API edge cases. Could also make the API client a pytest fixture
